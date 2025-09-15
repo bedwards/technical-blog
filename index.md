@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Brian Edwards' Technical
+title: Brian Edwards' Technical Blog
 ---
 
 <h1>{{ page.title }}</h1>
