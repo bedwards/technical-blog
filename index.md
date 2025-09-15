@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Your Blog Title
+title: Brian Edwards' Technical
 ---
 
-<h1>Latest Posts</h1>
+<h1>{{ page.title }}</h1>
 
 <ul>
   {% for post in site.posts %}
