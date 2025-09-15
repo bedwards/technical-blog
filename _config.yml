@@ -1,1 +1,57 @@
-remote_theme: "cotes2020/jekyll-theme-chirpy@v7.3.1"
+title: Brian Edwards' Technical Blog
+description: >- 
+  Writing about software engineering, distributed systems, and the occasional debugging war story.
+baseurl: "/technical-blog" # the subpath of your site, e.g. /blog
+url: "https://bedwards.github.io" # the base hostname & protocol
+github_username:  bedwards
+# twitter_username: yourtwitter
+
+# Build settings
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Reading Files
+# include:
+#   - _posts
+#   - _pages
+
+# Pagination
+paginate: 10
+paginate_path: /page:num/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      show_date: true
+
+# Author
+author:
+  name: "Brian Edwards"
+  avatar: "/assets/images/avatar.png"
+  bio: "Software engineer, distributed systems enthusiast"
+  location: "Waco, TX"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bedwards"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/brian-mabry-edwards"
