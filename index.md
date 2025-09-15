@@ -8,7 +8,7 @@ title: Brian Edwards' Technical Blog
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="technical-blog/{{ post.url }}">{{ post.title }}</a>
+      <a href="./{{ post.url }}">{{ post.title }}</a>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
     </li>
   {% endfor %}
